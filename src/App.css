@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #fff;
+  min-height: 100vh;
+}
+.container {
+  width: 70%;
+  margin: auto;
+}
+.title {
+  text-align: center;
+  margin: 50px;
+  color: #2a2a2a;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.option-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin: auto;
+  margin-bottom: 45px;
+  grid-auto-rows: 80px;
+  width: 90%;
+  height: 85px;
+  align-items: end;
+  justify-items: center;
+}
+.output {
+  width: 90%;
+  margin: auto;
+  padding: 25px;
+  color: #2a2a2a;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  background: #e2e1e1;
+}
+.paragraphs,
+.tags,
+.include,
+.copy {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+input,
+select {
+  cursor: pointer;
+  border: none;
+  color: #2a2a2a;
+  background: lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  width: 170px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.copy button {
+  border: none;
+  background: rgb(38, 38, 58);
+  color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  width: 170px;
+}
+input:hover {
+  background: rgb(206, 206, 206);
+}
+.copy button:hover {
+  background: rgb(206, 206, 206);
+  color: #2a2a2a;
+}
+
+select:hover {
+  background: rgb(206, 206, 206);
+}
+
+.sentence {
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title {
+    font-size: 16px;
+    margin: 15px;
+  }
+  input,
+  select {
+    width: 100px;
+  }
+  .container {
+    width: 100%;
+  }
+  .paragraphs,
+  .tags,
+  .include,
+  .copy {
+    font-size: 20px;
+  }
+  .option-container {
+    margin-bottom: 20px;
+  }
+  .copy {
+    align-self: end;
+  }
+}
+@media screen and (max-width: 760px) {
+  .copy {
+    align-self: center;
+  }
+  .option-container {
+    height: 130px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .title {
+    font-size: 12px;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .copy {
+    align-self: end;
+  }
+  .option-container {
+    height: 160px;
+  }
+  .copy button {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 372px) {
+  .copy {
+    align-self: center;
+  }
+  .option-container {
+    height: 300px;
+  }
+  .title {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+}
